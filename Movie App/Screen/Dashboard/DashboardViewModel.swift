@@ -9,11 +9,11 @@ import Foundation
 
 class DashboardViewModel {
     
-    private var viewModelProtocol: DashboardViewModelProtocol!
+    private var viewModelProtocol: DashboardViewModelDelegate!
     
     var list: [CategoryUIEntity] = []
     
-    init (viewModelProtocol: DashboardViewModelProtocol) {
+    init (viewModelProtocol: DashboardViewModelDelegate) {
         self.viewModelProtocol = viewModelProtocol
     }
     

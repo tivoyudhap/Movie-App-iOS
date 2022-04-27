@@ -39,9 +39,17 @@ extension DashboardViewController: UICollectionViewDelegate, UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.list.count
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if (navigationController == nil) {
+            print("hahahaha")
+        }
+        navigationController?.pushViewController(CustomRouter.moviesViewController(entity: viewModel.list[indexPath.row]), animated: true)
+        collectionView.deselectItem(at: indexPath, animated: true)
+    }
 }
 
-extension DashboardViewController: DashboardViewModelProtocol {
+extension DashboardViewController: DashboardViewModelDelegate {
     func successLoadCategoryList() {
         collectionView.reloadData()
     }

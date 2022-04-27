@@ -20,4 +20,9 @@ class MovieClient {
         let request = RequestModel(httpMethod: .get, path: "3/genre/movie/list?api_key=\(KEY_API)", payload: nil).asURLRequest()
         return apiClient.caller.call(request)
     }
+    
+    func requestMovieListByCategory(categoryId: Int) -> Observable<Result<MoviesContainerRemoteEntity, ErrorEntity>> {
+        let request = RequestModel(httpMethod: .get, path: "3/discover/movie?api_key=\(KEY_API)&with_genres=\(categoryId)", payload: nil).asURLRequest()
+        return apiClient.caller.call(request)
+    }
 }

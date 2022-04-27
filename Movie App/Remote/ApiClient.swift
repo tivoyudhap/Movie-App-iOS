@@ -14,6 +14,6 @@ class ApiClient {
     var caller: RequestCaller = RequestCaller()
     
     init() {
-        RequestModel.defaults.baseUrl = "https://api.themoviedb.org/"
+        RequestModel.defaults.baseUrl = "https://api.themoviedb.org"
     }
 }
