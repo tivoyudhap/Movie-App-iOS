@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CategoryCollectionViewCell" customModule="Movie_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="257"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="331" height="257"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rBX-qz-bqv">
+                        <rect key="frame" x="16" y="16" width="299" height="225"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXC-Kj-Gqp">
+                                <rect key="frame" x="8" y="8" width="283" height="209"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OXC-Kj-Gqp" firstAttribute="top" secondItem="rBX-qz-bqv" secondAttribute="top" constant="8" id="GL1-dH-jOa"/>
+                            <constraint firstItem="OXC-Kj-Gqp" firstAttribute="leading" secondItem="rBX-qz-bqv" secondAttribute="leading" constant="8" id="HH7-oW-aof"/>
+                            <constraint firstAttribute="trailing" secondItem="OXC-Kj-Gqp" secondAttribute="trailing" constant="8" id="o4H-Rv-Vzh"/>
+                            <constraint firstAttribute="bottom" secondItem="OXC-Kj-Gqp" secondAttribute="bottom" constant="8" id="seF-oT-wyB"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="rBX-qz-bqv" secondAttribute="bottom" constant="16" id="Rwe-80-QbB"/>
+                <constraint firstItem="rBX-qz-bqv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="XFt-9K-KuB"/>
+                <constraint firstItem="rBX-qz-bqv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="wqe-CC-Ywv"/>
+                <constraint firstAttribute="trailing" secondItem="rBX-qz-bqv" secondAttribute="trailing" constant="16" id="ycu-Ck-ZfM"/>
+            </constraints>
+            <size key="customSize" width="331" height="257"/>
+            <connections>
+                <outlet property="baseBackground" destination="rBX-qz-bqv" id="e8b-Ve-EJc"/>
+                <outlet property="categoryName" destination="OXC-Kj-Gqp" id="0Cu-4j-zHL"/>
+            </connections>
+            <point key="canvasLocation" x="341.304347826087" y="207.92410714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
