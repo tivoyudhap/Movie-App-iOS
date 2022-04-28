@@ -20,4 +20,10 @@ class CustomRouter {
         let viewController: DashboardViewController = DashboardViewController()
         return viewController
     }
+    
+    static func detailMoviesViewController(entity: MovieUIEntity) -> UIViewController {
+        let viewController: DetailMovieViewController = DetailMovieViewController()
+        viewController.entity = entity
+        return viewController
+    }
 }

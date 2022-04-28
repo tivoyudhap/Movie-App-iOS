@@ -15,6 +15,7 @@ struct MoviesRemoteEntity: Codable {
     var title: String = ""
     var overview: String = ""
     var releaseDate: String = ""
+    var voteAverage: Float = 0.0
     
     enum CodingKeys: String, CodingKey {
         case backdropPath = "backdrop_path"
@@ -23,5 +24,6 @@ struct MoviesRemoteEntity: Codable {
         case title = "title"
         case overview = "overview"
         case releaseDate = "release_date"
+        case voteAverage = "vote_average"
     }
 }

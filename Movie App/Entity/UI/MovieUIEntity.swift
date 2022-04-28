@@ -16,4 +16,5 @@ struct MovieUIEntity {
     var title: String = ""
     var overview: String = ""
     var releaseDate: String = ""
+    var rate: Float = 0.0
 }

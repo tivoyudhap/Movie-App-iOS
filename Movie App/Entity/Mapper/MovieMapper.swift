@@ -16,7 +16,8 @@ class MovieMapper {
             id: entity.id,
             title: entity.title,
             overview: entity.overview,
-            releaseDate: entity.releaseDate
+            releaseDate: entity.releaseDate,
+            rate: entity.voteAverage
         )
     }
 }

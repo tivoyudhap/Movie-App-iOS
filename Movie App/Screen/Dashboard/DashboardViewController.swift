@@ -9,49 +9,59 @@ import UIKit
 
 class DashboardViewController: UIViewController {
 
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var trendingCollectionView: UICollectionView!
+    @IBOutlet weak var previewImage: UIImageView!
+    @IBOutlet weak var previewName: UILabel!
     
     private var viewModel: DashboardViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel = DashboardViewModel.init(viewModelProtocol: self)
-        setUpCollectionView()
+        previewImage.contentMode = .scaleToFill
+        setUpTrendingCollectionView()
         
-        viewModel.getCategoryData()
+        viewModel.getTrendingMovie()
     }
     
-    private func setUpCollectionView() {
-        collectionView.delegate = self
-        collectionView.dataSource = self
+    private func setUpTrendingCollectionView() {
+        trendingCollectionView.delegate = self
+        trendingCollectionView.dataSource = self
         
-        collectionView.register(UINib(nibName: String(describing: CategoryCollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: CategoryCollectionViewCell.self))
+        trendingCollectionView.register(UINib(nibName: String(describing: MoviePreviewCollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: MoviePreviewCollectionViewCell.self))
     }
 }
 
 extension DashboardViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell: CategoryCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CategoryCollectionViewCell.self), for: indexPath) as! CategoryCollectionViewCell
-        cell.setUpData(entity: viewModel.list[indexPath.row])
+        let cell: MoviePreviewCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: MoviePreviewCollectionViewCell.self), for: indexPath) as! MoviePreviewCollectionViewCell
+        cell.setUpData(entity: viewModel.movieList[indexPath.row])
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModel.list.count
+        return viewModel.movieList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if (navigationController == nil) {
-            print("hahahaha")
-        }
-        navigationController?.pushViewController(CustomRouter.moviesViewController(entity: viewModel.list[indexPath.row]), animated: true)
+        navigationController?.pushViewController(CustomRouter.detailMoviesViewController(entity: viewModel.movieList[indexPath.row]), animated: true)
         collectionView.deselectItem(at: indexPath, animated: true)
+    }
+    
+    @objc func onPreviewImageShouldChanged() {
+        viewModel.shouldChangePreview()
     }
 }
 
 extension DashboardViewController: DashboardViewModelDelegate {
+    func shouldChangePreview(entity: MovieUIEntity) {
+        previewImage.loadFrom(imgUrl: "https://image.tmdb.org/t/p/original/\(entity.backdropPath)")
+        previewName.text = entity.title
+    }
+    
     func successLoadCategoryList() {
-        collectionView.reloadData()
+        trendingCollectionView.reloadData()
+        Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(onPreviewImageShouldChanged), userInfo: nil, repeats: true)
     }
     
     func onError(message: String) {

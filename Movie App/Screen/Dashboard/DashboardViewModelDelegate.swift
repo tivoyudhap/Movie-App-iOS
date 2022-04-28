@@ -10,4 +10,5 @@ import Foundation
 protocol DashboardViewModelDelegate {
     func successLoadCategoryList()
     func onError(message: String)
+    func shouldChangePreview(entity: MovieUIEntity)
 }

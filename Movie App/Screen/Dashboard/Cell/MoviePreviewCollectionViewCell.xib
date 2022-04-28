@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gTV-IL-0wX" customClass="MoviePreviewCollectionViewCell" customModule="Movie_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="256" height="151"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="256" height="151"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uJR-gS-Uq9">
+                        <rect key="frame" x="8" y="8" width="240" height="135"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="135" id="x4E-Cg-sTP"/>
+                            <constraint firstAttribute="width" constant="240" id="xLo-qe-twl"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="uJR-gS-Uq9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="aja-cg-HrC"/>
+                <constraint firstAttribute="bottom" secondItem="uJR-gS-Uq9" secondAttribute="bottom" constant="8" id="dPu-pH-Spo"/>
+                <constraint firstAttribute="trailing" secondItem="uJR-gS-Uq9" secondAttribute="trailing" constant="8" id="rNy-ce-GYR"/>
+                <constraint firstItem="uJR-gS-Uq9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="vXI-xy-qbz"/>
+            </constraints>
+            <size key="customSize" width="255" height="150"/>
+            <connections>
+                <outlet property="previewImageView" destination="uJR-gS-Uq9" id="8zF-vi-b8A"/>
+            </connections>
+            <point key="canvasLocation" x="286.23188405797106" y="131.25"/>
+        </collectionViewCell>
+    </objects>
+</document>
