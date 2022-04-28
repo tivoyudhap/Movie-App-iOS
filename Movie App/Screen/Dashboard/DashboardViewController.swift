@@ -12,6 +12,7 @@ class DashboardViewController: UIViewController {
     @IBOutlet weak var trendingCollectionView: UICollectionView!
     @IBOutlet weak var previewImage: UIImageView!
     @IBOutlet weak var previewName: UILabel!
+    @IBOutlet weak var loadingView: UIActivityIndicatorView!
     
     private var viewModel: DashboardViewModel!
     
@@ -21,6 +22,8 @@ class DashboardViewController: UIViewController {
         previewImage.contentMode = .scaleToFill
         setUpTrendingCollectionView()
         
+        loadingView.startAnimating()
+        loadingView.isHidden = false
         viewModel.getTrendingMovie()
     }
     
@@ -60,11 +63,13 @@ extension DashboardViewController: DashboardViewModelDelegate {
     }
     
     func successLoadCategoryList() {
+        loadingView.isHidden = true
         trendingCollectionView.reloadData()
         Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(onPreviewImageShouldChanged), userInfo: nil, repeats: true)
     }
     
     func onError(message: String) {
+        loadingView.isHidden = true
         print(message)
     }
 }

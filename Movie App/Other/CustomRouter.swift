@@ -10,12 +10,6 @@ import UIKit
 
 class CustomRouter {
     
-    static func moviesViewController(entity: CategoryUIEntity) -> UIViewController {
-        let viewController: MoviesViewController = MoviesViewController()
-        viewController.categoryEntity = entity
-        return viewController
-    }
-    
     static func dashboardViewController() -> UIViewController {
         let viewController: DashboardViewController = DashboardViewController()
         return viewController
