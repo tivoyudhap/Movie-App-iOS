@@ -15,4 +15,9 @@ class CustomRouter {
         viewController.categoryEntity = entity
         return viewController
     }
+    
+    static func dashboardViewController() -> UIViewController {
+        let viewController: DashboardViewController = DashboardViewController()
+        return viewController
+    }
 }

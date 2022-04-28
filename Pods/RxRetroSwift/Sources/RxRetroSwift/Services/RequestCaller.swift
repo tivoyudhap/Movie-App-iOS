@@ -38,7 +38,11 @@ public class RequestCaller{
               let statusCode = httpResponse.statusCode
               
               do {
+                  
                 let _data = data ?? Data()
+#if DEBUG
+print("METHOD: \(request.httpMethod ?? "")\nHEADERS: \(request.allHTTPHeaderFields ?? [:])\nURL : \(httpResponse.url?.absoluteString ?? "No Url") \nPARAMS : \(String(data: request.httpBody ?? Data(), encoding: .utf8) ?? "No Params")\nRESPONSE : \(String(data: _data, encoding: .utf8) ?? "")")
+#endif
                 if (200...399).contains(statusCode) {
                   let objs = try _self.decoder.decode(ItemModel.self, from: _data)
                   observer.onNext(Result.successful(objs))
@@ -75,7 +79,9 @@ public class RequestCaller{
             let _data = data ?? Data()
             if let httpResponse = response as? HTTPURLResponse{
               let statusCode = httpResponse.statusCode
-              
+#if DEBUG
+print("METHOD: \(request.httpMethod ?? "")\nHEADERS: \(request.allHTTPHeaderFields ?? [:])\nURL : \(httpResponse.url?.absoluteString ?? "No Url") \nPARAMS : \(String(data: request.httpBody ?? Data(), encoding: .utf8) ?? "No Params")\nRESPONSE : \(String(data: _data, encoding: .utf8) ?? "")")
+#endif
               do {
                 if (200...399).contains(statusCode) {
                   let plainResponse = RawResponse(statusCode: statusCode, data: _data)

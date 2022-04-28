@@ -56,7 +56,7 @@ extension RequestModel {
     
     let url = "\(baseUrl)/\(path)"
     
-    var components = URLComponents(string: url)
+     var components = URLComponents(string: url)
     if let qItems = query {
       let queryItems:[URLQueryItem] = qItems.reduce([], { (result, current) -> [URLQueryItem] in
         var _result = result

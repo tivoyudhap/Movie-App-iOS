@@ -45,6 +45,16 @@
 		1052021A28130B4600397F51 /* Movie_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1052021928130B4600397F51 /* Movie_AppUITestsLaunchTests.swift */; };
 		1052022928130BB200397F51 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1052022728130BB200397F51 /* DashboardViewController.swift */; };
 		1052022A28130BB200397F51 /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1052022828130BB200397F51 /* DashboardViewController.xib */; };
+		10B6C69E281A357100A93AC2 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B6C69C281A357100A93AC2 /* SplashViewController.swift */; };
+		10B6C69F281A357100A93AC2 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10B6C69D281A357100A93AC2 /* SplashViewController.xib */; };
+		10B6C6A1281A368200A93AC2 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B6C6A0281A368200A93AC2 /* SplashViewModel.swift */; };
+		10B6C6A3281A369E00A93AC2 /* AuthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B6C6A2281A369E00A93AC2 /* AuthClient.swift */; };
+		10B6C6A5281A36FC00A93AC2 /* GuestSessionRemoteEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B6C6A4281A36FC00A93AC2 /* GuestSessionRemoteEntity.swift */; };
+		10B6C6A7281A37AE00A93AC2 /* GuestSessionObservableBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B6C6A6281A37AE00A93AC2 /* GuestSessionObservableBuilder.swift */; };
+		10B6C6A9281A37F000A93AC2 /* SplashViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B6C6A8281A37F000A93AC2 /* SplashViewModelDelegate.swift */; };
+		10B6C6AB281A384300A93AC2 /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B6C6AA281A384300A93AC2 /* UserDefaultManager.swift */; };
+		10B6C6AD281A3C7F00A93AC2 /* LoadingDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B6C6AC281A3C7F00A93AC2 /* LoadingDialog.swift */; };
+		10B6C6AF281A3D6700A93AC2 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B6C6AE281A3D6700A93AC2 /* StringExtension.swift */; };
 		350D0A3EE22202DB48287EAE /* Pods_Movie_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D12D5E50EE3263EC1BD782 /* Pods_Movie_AppTests.framework */; };
 		8251D8E23C9116328ACC4323 /* Pods_Movie_App_Movie_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4355577DD4F71BB4606F67A0 /* Pods_Movie_App_Movie_AppUITests.framework */; };
 		E13BB64A3E4A6BB7524BA6FD /* Pods_Movie_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97164BC19B818A2398E6DAC1 /* Pods_Movie_App.framework */; };
@@ -110,6 +120,16 @@
 		1052021928130B4600397F51 /* Movie_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1052022728130BB200397F51 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		1052022828130BB200397F51 /* DashboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
+		10B6C69C281A357100A93AC2 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		10B6C69D281A357100A93AC2 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		10B6C6A0281A368200A93AC2 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		10B6C6A2281A369E00A93AC2 /* AuthClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthClient.swift; sourceTree = "<group>"; };
+		10B6C6A4281A36FC00A93AC2 /* GuestSessionRemoteEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestSessionRemoteEntity.swift; sourceTree = "<group>"; };
+		10B6C6A6281A37AE00A93AC2 /* GuestSessionObservableBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestSessionObservableBuilder.swift; sourceTree = "<group>"; };
+		10B6C6A8281A37F000A93AC2 /* SplashViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModelDelegate.swift; sourceTree = "<group>"; };
+		10B6C6AA281A384300A93AC2 /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
+		10B6C6AC281A3C7F00A93AC2 /* LoadingDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingDialog.swift; sourceTree = "<group>"; };
+		10B6C6AE281A3D6700A93AC2 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		4355577DD4F71BB4606F67A0 /* Pods_Movie_App_Movie_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movie_App_Movie_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F1A6ACA16A994F97C66AD4 /* Pods-Movie App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie App.debug.xcconfig"; path = "Target Support Files/Pods-Movie App/Pods-Movie App.debug.xcconfig"; sourceTree = "<group>"; };
 		83DC41FCF735334FD5717086 /* Pods-Movie App-Movie AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie App-Movie AppUITests.release.xcconfig"; path = "Target Support Files/Pods-Movie App-Movie AppUITests/Pods-Movie App-Movie AppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -177,6 +197,9 @@
 				1039F6732819057B00579813 /* BaseObservableBuilder.swift */,
 				1039F683281910E800579813 /* CustomRouter.swift */,
 				1039F69628191C6C00579813 /* ViewExtension.swift */,
+				10B6C6AA281A384300A93AC2 /* UserDefaultManager.swift */,
+				10B6C6AC281A3C7F00A93AC2 /* LoadingDialog.swift */,
+				10B6C6AE281A3D6700A93AC2 /* StringExtension.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -186,6 +209,7 @@
 			children = (
 				1039F676281905D500579813 /* GetCategoryObservableBuilder.swift */,
 				1039F68B2819190100579813 /* GetMoviesByCategoryObservableBuilder.swift */,
+				10B6C6A6281A37AE00A93AC2 /* GuestSessionObservableBuilder.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -224,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				104E835D2815A550000CA385 /* MovieClient.swift */,
+				10B6C6A2281A369E00A93AC2 /* AuthClient.swift */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -255,6 +280,7 @@
 				1039F67828190B1400579813 /* CategoryContainerRemoteEntity.swift */,
 				1039F6872819145E00579813 /* MoviesRemoteEntity.swift */,
 				1039F6892819189700579813 /* MoviesContainerRemoteEntity.swift */,
+				10B6C6A4281A36FC00A93AC2 /* GuestSessionRemoteEntity.swift */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -329,10 +355,22 @@
 		1052022628130B9700397F51 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				10B6C69B281A355E00A93AC2 /* Splash */,
 				1039F67E28190F2E00579813 /* Movies */,
 				102FE49B281462FE00A2E00B /* Dashboard */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		10B6C69B281A355E00A93AC2 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				10B6C69C281A357100A93AC2 /* SplashViewController.swift */,
+				10B6C69D281A357100A93AC2 /* SplashViewController.xib */,
+				10B6C6A0281A368200A93AC2 /* SplashViewModel.swift */,
+				10B6C6A8281A37F000A93AC2 /* SplashViewModelDelegate.swift */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 		3AC59B60C3FC7F1DD4A1C33B /* Frameworks */ = {
@@ -470,6 +508,7 @@
 				1039F67D28190CE500579813 /* CategoryCollectionViewCell.xib in Resources */,
 				1039F68228190F4400579813 /* MoviesViewController.xib in Resources */,
 				1052020328130B4600397F51 /* LaunchScreen.storyboard in Resources */,
+				10B6C69F281A357100A93AC2 /* SplashViewController.xib in Resources */,
 				1039F69528191A8F00579813 /* MoviesTableViewCell.xib in Resources */,
 				1052020028130B4600397F51 /* Assets.xcassets in Resources */,
 				105201FE28130B4400397F51 /* Main.storyboard in Resources */,
@@ -601,20 +640,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10B6C69E281A357100A93AC2 /* SplashViewController.swift in Sources */,
 				1039F67928190B1400579813 /* CategoryContainerRemoteEntity.swift in Sources */,
 				104E835B2815A478000CA385 /* ApiClient.swift in Sources */,
+				10B6C6AF281A3D6700A93AC2 /* StringExtension.swift in Sources */,
 				102FE4A32814659700A2E00B /* CustomConstants.swift in Sources */,
 				1039F6902819199400579813 /* MovieMapper.swift in Sources */,
 				1039F68A2819189700579813 /* MoviesContainerRemoteEntity.swift in Sources */,
 				1039F68C2819190100579813 /* GetMoviesByCategoryObservableBuilder.swift in Sources */,
 				1039F6862819144500579813 /* MoviesViewModel.swift in Sources */,
+				10B6C6A9281A37F000A93AC2 /* SplashViewModelDelegate.swift in Sources */,
 				1039F67C28190CE500579813 /* CategoryCollectionViewCell.swift in Sources */,
 				1039F684281910E800579813 /* CustomRouter.swift in Sources */,
 				1039F69728191C6C00579813 /* ViewExtension.swift in Sources */,
+				10B6C6A7281A37AE00A93AC2 /* GuestSessionObservableBuilder.swift in Sources */,
 				1039F677281905D500579813 /* GetCategoryObservableBuilder.swift in Sources */,
 				1039F69428191A8F00579813 /* MoviesTableViewCell.swift in Sources */,
 				104E835E2815A550000CA385 /* MovieClient.swift in Sources */,
+				10B6C6A5281A36FC00A93AC2 /* GuestSessionRemoteEntity.swift in Sources */,
 				104E837E2815BA88000CA385 /* DashboardViewModelDelegate.swift in Sources */,
+				10B6C6A1281A368200A93AC2 /* SplashViewModel.swift in Sources */,
 				105201FB28130B4400397F51 /* ViewController.swift in Sources */,
 				105201F728130B4400397F51 /* AppDelegate.swift in Sources */,
 				105201F928130B4400397F51 /* SceneDelegate.swift in Sources */,
@@ -624,11 +669,14 @@
 				1039F68E2819197900579813 /* MovieUIEntity.swift in Sources */,
 				104E83632815B08D000CA385 /* CategoryRemoteEntity.swift in Sources */,
 				1039F68128190F4400579813 /* MoviesViewController.swift in Sources */,
+				10B6C6AD281A3C7F00A93AC2 /* LoadingDialog.swift in Sources */,
 				104E83652815B0F0000CA385 /* ErrorEntity.swift in Sources */,
+				10B6C6A3281A369E00A93AC2 /* AuthClient.swift in Sources */,
 				104E83722815B416000CA385 /* DashboardViewModel.swift in Sources */,
 				1039F6742819057B00579813 /* BaseObservableBuilder.swift in Sources */,
 				104E83702815B38D000CA385 /* CategoryMapper.swift in Sources */,
 				104E836D2815B35B000CA385 /* CategoryUIEntity.swift in Sources */,
+				10B6C6AB281A384300A93AC2 /* UserDefaultManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
