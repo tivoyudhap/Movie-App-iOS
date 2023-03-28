@@ -1,3 +1,3 @@
 # Movie-App-iOS
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=tivoyudhap&hide=contribs,prs)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=tivoyudhap&hide=contribs,prs&count_private=true)
